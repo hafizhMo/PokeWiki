@@ -11,6 +11,13 @@
 		FB15E6AE2A9A49E700504264 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6AD2A9A49E700504264 /* ContentView.swift */; };
 		FB15E6B02A9A49E800504264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15E6AF2A9A49E800504264 /* Assets.xcassets */; };
 		FB15E6B32A9A49E800504264 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15E6B22A9A49E800504264 /* Preview Assets.xcassets */; };
+		FB15E6BB2A9A4C7100504264 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = FB15E6BA2A9A4C7100504264 /* pokemon.json */; };
+		FB15E6C02A9A4D2800504264 /* PokemonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6BF2A9A4D2800504264 /* PokemonDTO.swift */; };
+		FB15E6C22A9A4DBF00504264 /* PokemonPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6C12A9A4DBF00504264 /* PokemonPageDTO.swift */; };
+		FB15E6C42A9A4DF100504264 /* PokemonDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6C32A9A4DF100504264 /* PokemonDetailDTO.swift */; };
+		FB15E6C62A9A4E2500504264 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6C52A9A4E2500504264 /* NetworkHelper.swift */; };
+		FB15E6C82A9A4FE000504264 /* PokemonDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6C72A9A4FE000504264 /* PokemonDataStore.swift */; };
+		FB15E6CB2A9A50ED00504264 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6CA2A9A50ED00504264 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		FB15E6AD2A9A49E700504264 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB15E6AF2A9A49E800504264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB15E6B22A9A49E800504264 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB15E6BA2A9A4C7100504264 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
+		FB15E6BF2A9A4D2800504264 /* PokemonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDTO.swift; sourceTree = "<group>"; };
+		FB15E6C12A9A4DBF00504264 /* PokemonPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonPageDTO.swift; sourceTree = "<group>"; };
+		FB15E6C32A9A4DF100504264 /* PokemonDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailDTO.swift; sourceTree = "<group>"; };
+		FB15E6C52A9A4E2500504264 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		FB15E6C72A9A4FE000504264 /* PokemonDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataStore.swift; sourceTree = "<group>"; };
+		FB15E6CA2A9A50ED00504264 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,11 @@
 		FB15E6AA2A9A49E700504264 /* PokeWiki */ = {
 			isa = PBXGroup;
 			children = (
-				FB15E6AB2A9A49E700504264 /* PokeWikiApp.swift */,
 				FB15E6AD2A9A49E700504264 /* ContentView.swift */,
+				FB15E6AB2A9A49E700504264 /* PokeWikiApp.swift */,
 				FB15E6AF2A9A49E800504264 /* Assets.xcassets */,
+				FB15E6B92A9A4C5C00504264 /* Data */,
+				FB15E6C92A9A50D800504264 /* Helpers */,
 				FB15E6B12A9A49E800504264 /* Preview Content */,
 			);
 			path = PokeWiki;
@@ -65,6 +81,51 @@
 				FB15E6B22A9A49E800504264 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB15E6B92A9A4C5C00504264 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB15E6BE2A9A4CEB00504264 /* DataStore */,
+				FB15E6BC2A9A4CC200504264 /* Models */,
+				FB15E6BD2A9A4CCB00504264 /* Network */,
+				FB15E6BA2A9A4C7100504264 /* pokemon.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB15E6BC2A9A4CC200504264 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB15E6BF2A9A4D2800504264 /* PokemonDTO.swift */,
+				FB15E6C12A9A4DBF00504264 /* PokemonPageDTO.swift */,
+				FB15E6C32A9A4DF100504264 /* PokemonDetailDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB15E6BD2A9A4CCB00504264 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB15E6C52A9A4E2500504264 /* NetworkHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB15E6BE2A9A4CEB00504264 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				FB15E6C72A9A4FE000504264 /* PokemonDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		FB15E6C92A9A50D800504264 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB15E6CA2A9A50ED00504264 /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB15E6B32A9A49E800504264 /* Preview Assets.xcassets in Resources */,
+				FB15E6BB2A9A4C7100504264 /* pokemon.json in Resources */,
 				FB15E6B02A9A49E800504264 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB15E6C42A9A4DF100504264 /* PokemonDetailDTO.swift in Sources */,
+				FB15E6C22A9A4DBF00504264 /* PokemonPageDTO.swift in Sources */,
+				FB15E6C82A9A4FE000504264 /* PokemonDataStore.swift in Sources */,
+				FB15E6CB2A9A50ED00504264 /* Helpers.swift in Sources */,
+				FB15E6C02A9A4D2800504264 /* PokemonDTO.swift in Sources */,
 				FB15E6AE2A9A49E700504264 /* ContentView.swift in Sources */,
+				FB15E6C62A9A4E2500504264 /* NetworkHelper.swift in Sources */,
 				FB15E6AC2A9A49E700504264 /* PokeWikiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
