@@ -8,7 +8,14 @@
 import Foundation
 
 struct PokemonDTO: Codable, Identifiable, Equatable {
-  var id = UUID()
+  let id = UUID()
   let name: String
   let url: String
+  
+  var index: Int {
+    let i = url
+      .dropFirst(34)
+      .dropLast()
+    return Int(i) ?? 1
+  }
 }
