@@ -18,4 +18,8 @@ struct PokemonDTO: Codable, Identifiable, Equatable {
       .dropLast()
     return Int(i) ?? 1
   }
+  
+  var imageUrl: String {
+    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(index).png"
+  }
 }

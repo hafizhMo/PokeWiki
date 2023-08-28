@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
   
   @StateObject var viewModel = ViewModel()
+  @State private var showDetail = false
+  @State private var selectedPokemon: PokemonDTO? = nil
   
   private let columns = [
     GridItem(.flexible()),
@@ -17,11 +19,18 @@ struct HomeView: View {
   ]
   
   var body: some View {
-    NavigationView {
+    NavigationStack(root: {
       ScrollView {
         LazyVGrid(columns: columns) {
           ForEach(viewModel.filteredPokemon) { pokemon in
-            HomeItemView(index: pokemon.index)
+            Button {
+              selectedPokemon = pokemon
+            } label: {
+              HomeItemView(imageUrl: pokemon.imageUrl)
+            }
+          }
+          .sheet(item: $selectedPokemon) { pokemon in
+            DetailView(pokemon: pokemon)
           }
         }
         .padding(8)
@@ -30,7 +39,7 @@ struct HomeView: View {
       .navigationBarTitleDisplayMode(.inline)
       .onAppear(perform: viewModel.getPokemons)
       .searchable(text: $viewModel.keyword)
-    }
+    })
   }
 }
 

@@ -9,11 +9,11 @@ import SwiftUI
 
 struct HomeItemView: View {
   let dimensions: Double = 183
-  var index: Int
+  var imageUrl: String
   
   var body: some View {
     VStack {
-      AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(index).png")) { image in
+      AsyncImage(url: URL(string: imageUrl)) { image in
         image
           .resizable()
           .scaledToFit()
@@ -30,6 +30,6 @@ struct HomeItemView: View {
 
 struct HomeItemView_Previews: PreviewProvider {
   static var previews: some View {
-    HomeItemView(index: 1)
+    HomeItemView(imageUrl: "")
   }
 }

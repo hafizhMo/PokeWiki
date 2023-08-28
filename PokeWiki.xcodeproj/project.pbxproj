@@ -19,6 +19,7 @@
 		FB15E6C82A9A4FE000504264 /* PokemonDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6C72A9A4FE000504264 /* PokemonDataStore.swift */; };
 		FB15E6CB2A9A50ED00504264 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6CA2A9A50ED00504264 /* Helpers.swift */; };
 		FB15E6CE2A9A593500504264 /* HomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB15E6CD2A9A593500504264 /* HomeItemView.swift */; };
+		FBFBAFF22A9C972200EB57E3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFBAFF12A9C972200EB57E3 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FB15E6C72A9A4FE000504264 /* PokemonDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataStore.swift; sourceTree = "<group>"; };
 		FB15E6CA2A9A50ED00504264 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		FB15E6CD2A9A593500504264 /* HomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemView.swift; sourceTree = "<group>"; };
+		FBFBAFF12A9C972200EB57E3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		FB15E6CC2A9A51EA00504264 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FBFBAFF02A9C971600EB57E3 /* Detail */,
 				FB15E6CF2A9A593B00504264 /* Home */,
 			);
 			path = Scenes;
@@ -145,6 +148,14 @@
 				FB15E6CD2A9A593500504264 /* HomeItemView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FBFBAFF02A9C971600EB57E3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FBFBAFF12A9C972200EB57E3 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				FB15E6C42A9A4DF100504264 /* PokemonDetailDTO.swift in Sources */,
 				FB15E6CE2A9A593500504264 /* HomeItemView.swift in Sources */,
 				FB15E6C22A9A4DBF00504264 /* PokemonPageDTO.swift in Sources */,
+				FBFBAFF22A9C972200EB57E3 /* DetailView.swift in Sources */,
 				FB15E6C82A9A4FE000504264 /* PokemonDataStore.swift in Sources */,
 				FB15E6CB2A9A50ED00504264 /* Helpers.swift in Sources */,
 				FB15E6C02A9A4D2800504264 /* PokemonDTO.swift in Sources */,
